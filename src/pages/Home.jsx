@@ -72,7 +72,7 @@ const Home = () => {
     { number: 1, context: { title: 'Frontend Developer at Daveshoope Inc.', description: 'Led a team in the development of a church management software' } },
     { number: 2, context: { title: 'Frontend Developer at TIIDELab Initiative', description: 'Collaborated with a team to build a mentorship and job placement application' } },
     { number: 3, context: { title: 'Frontend Developer intern at Zuri x I4g Initiative', description: 'Learnt frontend development and collaborated with other interns' } },
-    { number: 4, context: { title: 'Frontend Developer intern at Zuri x I4g Initiative', description: 'Learnt frontend development and collaborated with other interns' } },
+    { number: 4, context: { title: 'Self taught Frontend Developer', description: 'Learnt frontend development technologies while navigating my way through the web' } },
     
   ];
 
@@ -186,7 +186,7 @@ const Home = () => {
     <Nav />
     <div className='bg-[#171A2B] '>
       <div className='w-full md:w-[950px] mx-auto px-5 md:px-0' name='home' id='home'>
-        <div className='py-24  h-screen flex items-center justify-center text-center px-5'>
+        <div className='  h-screen flex items-center justify-center text-center px-5'>
           <div>
 
             <span className='text-[#F8830A] text-base animate__animated animate__fadeIn animate__delay-1s'>Hi, My name is </span>
@@ -206,8 +206,8 @@ const Home = () => {
 
           <Button number='01' title='About Me' />
           {/* <About name='about' /> */}
-          <div className='flex justify-center w-full  flex-wrap-reverse md:flex-row  flex-1 py-5'>
-            <div className=' md:w-1/2  text-[#F3F3F4] text-lg px-5'>
+          <div className='flex justify-center w-full  flex-wrap-reverse md:flex-row px-5 md:px-0  flex-1 py-5'>
+            <div className=' md:w-1/2  text-[#F3F3F4] text-lg '>
               <div data-aos="fade-right"
                 data-aos-offset="200"
                 data-aos-delay="50"
@@ -262,7 +262,7 @@ const Home = () => {
         <div name='project'>
           <Button number='03' title='Projects' />
           <div className='w-full'>
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-8 sm:px-0 py-5">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-5 sm:px-0 py-5">
               {project.map((project) => (
                 <div className="shadow-md shadow-gray-600 rounded-lg bg-[#0F1223] overflow-hidden">
                   <div data-aos="fade-up"
@@ -302,10 +302,10 @@ const Home = () => {
 
         <div name='contact'>
           <Button number='04' title='Contact' />
-          <div className='flex w-full md:w-[950px] flex-col md:flex-row justify-center p-5'>
+          <div className='flex w-full md:w-[950px] flex-col md:flex-row justify-center py-8 px-5 md:p-0 md:py-5'>
             <div className='w-full md:w-1/2 '>
               <div className='py-5'>
-                <p className='text-white py-5 text-md'>
+                <p className='text-white  text-md'>
                   Have any idea you want to bring to life? <br />
                   <span className='text-[#f8830a]'>
                     Let's Discuss</span>
@@ -325,7 +325,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div data-aos="fade-upy"
-                  data-aos-offset="100"
+                  data-aos-offset="200"
                   data-aos-delay="50"
                   data-aos-duration="1000"
                   data-aos-easing="ease-in-out">
@@ -343,7 +343,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div data-aos="fade-up-right"
-                  data-aos-offset="100"
+                  data-aos-offset="200"
                   data-aos-delay="50"
                   data-aos-duration="1000"
                   data-aos-easing="ease-in-out">
@@ -368,7 +368,7 @@ const Home = () => {
             </div>
             <div className='w-full  md:w-1/2'>
               <div data-aos="fade-up"
-                data-aos-offset="100"
+                data-aos-offset="200"
                 data-aos-delay="50"
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out">
@@ -384,7 +384,7 @@ const Home = () => {
                       onChange={(event) => setFullname(event.target.value)}
                       value={fullname}
                       placeholder='Your Name'
-                      className='p-2  bg-transparent border-2 rounded-md text-white focus:outline-none focus:border-[#f8830a]' />
+                      className='p-2  bg-transparent border-2 rounded text-white focus:outline-none focus:border-[#f8830a]' />
                   </div>
                   <div className='my-4 flex flex-col'>
                     <label htmlFor='email' >Email</label>
@@ -392,7 +392,7 @@ const Home = () => {
                       onChange={(event) => setEmail(event.target.value)}
                       value={email}
                       placeholder='Your Email'
-                      className='p-2  bg-transparent border-2 rounded-md text-white focus:outline-none focus:border-[#f8830a]' />
+                      className='p-2  bg-transparent border-2 rounded text-white focus:outline-none focus:border-[#f8830a]' />
                   </div>
                   <div className='my-4 flex flex-col'>
                     <label htmlFor='message' > Message</label>
@@ -400,7 +400,7 @@ const Home = () => {
                       onChange={(event) => setMessage(event.target.value)}
                       value={message}
                       placeholder='Your Message'
-                      className='p-2  bg-transparent border-2 rounded-md text-white focus:outline-none focus:border-[#f8830a]' />
+                      className='p-2  bg-transparent border-2 rounded text-white focus:outline-none focus:border-[#f8830a]' />
                   </div>
                   
                   <button className='p-2 border-none rounded-md text-white bg-[#f8830a] px-5 py-3' type='submit'>

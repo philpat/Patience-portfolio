@@ -8,7 +8,7 @@ const Button =(props)=>{
   }, []);
   const {title, number}= props
   return(
-    <div className='flex pt-24'>
+    <div className='flex pt-24 px-5 md:px-0'>
       <div data-aos="fade-up">
       <h1 className='outline outline-[#f8830a] outline-1 py-3 px-6 bg-[#0F1223] text-[#F3F3F4] text-3xl'>{number}. <span className='text-[#f8830a]'>{title}</span></h1>
       </div>
