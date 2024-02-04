@@ -17,7 +17,7 @@ const Timeline = ({ data }) => {
         {data.map((item, index) => (
           <div
             key={index}
-            data-aos="fade-up-left"
+            data-aos="fade-up"
             data-aos-offset="200"
             data-aos-delay="50"
             data-aos-duration="1000"

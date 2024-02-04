@@ -182,10 +182,11 @@ const Home = () => {
 
   
   return (
+    <>
+    <Nav />
     <div className='bg-[#171A2B] '>
-      <Nav />
       <div className='w-full md:w-[950px] mx-auto px-5 md:px-0' name='home' id='home'>
-        <div className='py-24  h-screen flex items-center justify-center text-center'>
+        <div className='py-24  h-screen flex items-center justify-center text-center px-5'>
           <div>
 
             <span className='text-[#F8830A] text-base animate__animated animate__fadeIn animate__delay-1s'>Hi, My name is </span>
@@ -205,8 +206,8 @@ const Home = () => {
 
           <Button number='01' title='About Me' />
           {/* <About name='about' /> */}
-          <div className='flex justify-center  flex-wrap-reverse md:flex-row  flex-1 py-5'>
-            <div className=' md:w-1/2  text-[#F3F3F4] text-lg'>
+          <div className='flex justify-center w-full  flex-wrap-reverse md:flex-row  flex-1 py-5'>
+            <div className=' md:w-1/2  text-[#F3F3F4] text-lg px-5'>
               <div data-aos="fade-right"
                 data-aos-offset="200"
                 data-aos-delay="50"
@@ -260,8 +261,8 @@ const Home = () => {
 
         <div name='project'>
           <Button number='03' title='Projects' />
-          <div >
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 py-5">
+          <div className='w-full'>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-8 sm:px-0 py-5">
               {project.map((project) => (
                 <div className="shadow-md shadow-gray-600 rounded-lg bg-[#0F1223] overflow-hidden">
                   <div data-aos="fade-up"
@@ -301,7 +302,7 @@ const Home = () => {
 
         <div name='contact'>
           <Button number='04' title='Contact' />
-          <div className='flex flex-col md:flex-row justify-center py-5'>
+          <div className='flex w-full md:w-[950px] flex-col md:flex-row justify-center p-5'>
             <div className='w-full md:w-1/2 '>
               <div className='py-5'>
                 <p className='text-white py-5 text-md'>
@@ -323,8 +324,8 @@ const Home = () => {
                     <a href='tel:+2348167344065' className='px-2'>+2348167344065</a>
                   </div>
                 </div>
-                <div data-aos="fade-up-left"
-                  data-aos-offset="200"
+                <div data-aos="fade-upy"
+                  data-aos-offset="100"
                   data-aos-delay="50"
                   data-aos-duration="1000"
                   data-aos-easing="ease-in-out">
@@ -342,7 +343,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div data-aos="fade-up-right"
-                  data-aos-offset="200"
+                  data-aos-offset="100"
                   data-aos-delay="50"
                   data-aos-duration="1000"
                   data-aos-easing="ease-in-out">
@@ -365,15 +366,15 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className='w-full md:w-1/2 '>
-              <div data-aos="fade-up-left"
-                data-aos-offset="200"
+            <div className='w-full  md:w-1/2'>
+              <div data-aos="fade-up"
+                data-aos-offset="100"
                 data-aos-delay="50"
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out">
                 <form
                   action
-                  className=' p-5 rounded-2xl text-white'
+                  className='  rounded-2xl text-white'
                   id='contact-form'
                   onSubmit={handleSubmit}
                 >
@@ -413,6 +414,7 @@ const Home = () => {
       </div>
       <Footer />
     </div>
+    </>
   )
 }
 export default Home

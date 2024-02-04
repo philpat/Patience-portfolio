@@ -11,7 +11,7 @@ const TimelineItem = ({ number, context, totalItems }) => {
       {number}
     </div>
   </div>
-  <div className='border border-slate-100 rounded-sm px-4 w-[900px] py-4'>
+  <div className='border border-slate-100 rounded-sm px-5 md:px-8 w-[900px] py-4'>
     <div className="text-lg font-semibold mb-2 text-[#f8830a] ">{context.title}</div>
     <p className="text-white">{context.description}</p>
   </div>

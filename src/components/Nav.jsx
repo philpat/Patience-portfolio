@@ -22,8 +22,8 @@ const Nav = () => {
   };
 
   return (
-    <div>
-      <div className={`bg-[#171A2B] text-[#F3F3F4] flex justify-between items-center p-3 shadow-xl ${bar ? 'absolute top-0' : 'sticky top-0 z-10'} w-full gap-4`}>
+    <div className='relative'>
+      <div className={`bg-[#171A2B] text-[#F3F3F4] flex justify-between items-center p-3 shadow-xl fixed z-10 top-0 w-full gap-4`}>
         {!bar && <h1>patience</h1>}
         <div>
           <div className={`relative top-0 md:hidden py-3 ${bar ? 'translate-x-80' : 'translate-x-[-40px]'}`}>
@@ -53,7 +53,7 @@ const Nav = () => {
           </div>
 
           {bar && (
-            <div className='md:hidden'>
+            <div className='md:hidden  h-screen '>
               {navigation.map((item) => (
                 <ScrollLink
                   key={item.id}
