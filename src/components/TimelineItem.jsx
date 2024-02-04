@@ -4,7 +4,7 @@ const TimelineItem = ({ number, context, totalItems }) => {
   return (
     <div className="flex items-center relative mb-8">
   {!isLastItem && (
-    <div className="h-full w-px bg-[#f8830a] absolute left-4 md:top-[64px] top-[90px]"></div>
+    <div className="h-full w-px bg-[#f8830a] absolute left-4 md:top-[63px] top-[90px]"></div>
   )}
   <div className="mr-4">
     <div className="bg-[#f8830a] text-white w-8 h-8 flex items-center justify-center rounded-full">
