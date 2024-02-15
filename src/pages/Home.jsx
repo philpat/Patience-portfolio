@@ -16,7 +16,6 @@ import SocialLinks from './../components/SocialLinks'
 import 'animate.css';
 import emailjs from "@emailjs/browser";
 import Swal from 'sweetalert2'
-import withReactContent from 'sweetalert2-react-content'
 import { Spinner } from '@material-tailwind/react';
 
 
@@ -27,7 +26,6 @@ const Home = () => {
     emailjs.init("NLlphCjzwTs_BIfJi");
   }, []);
 
-  const MySwal = withReactContent(Swal)
 
   const serviceID = 'service_uc2yv1i';
   const templateID = 'template_fyr2pkg'
@@ -193,11 +191,12 @@ const Home = () => {
             <h1 className='text-4xl font-bold text-[#F3F3F4] animate__animated  animate__fadeInDown animate__delay-1s '>Patience Bassey.</h1>
             <h2 className='text-2xl font-semibold py-2 text-[#cecfd3] animate__animated animate__flipInX animate__delay-1s'>I use Technology to solve problems</h2>
             <p className='text-lg text-[#cecfd3] animate__animated animate__fadeInUp animate__delay-1s'>
-              I'm a frontend developer . I use HTML, CSS and Javascript to bring design to life.
+              I'm a frontend developer . I use Frontend technologies  to bring designs to life.
               I'm driven by a passion for crafting visually stunning and responsive web designs that is accessible to all.
             </p>
             <SocialLinks  />
-              <Link to='https://docs.google.com/document/d/1tywq0hs-i1l9rmFLHe0irnerinFQONZU_LxHXwFcXag/edit' target='_blank' className='outline outline-1 outline-[#f8830a]  py-3 px-8 mt-5 text-[#f8830a] inline-block text-lg rounded-sm '>
+              <Link to='https://docs.google.com/document/d/1tywq0hs-i1l9rmFLHe0irnerinFQONZU_LxHXwFcXag/edit' target='_blank'
+               className='outline outline-1 outline-[#f8830a] hover:bg-[#F8830A33]  duration-300  py-3 px-8 mt-5 text-[#f8830a] inline-block text-lg rounded-sm '>
                 Resume
               </Link>
           </div>
@@ -302,7 +301,7 @@ const Home = () => {
 
         <div name='contact'>
           <Button number='04' title='Contact' />
-          <div className='flex w-full md:w-[950px] flex-col md:flex-row justify-center py-8 px-5 md:p-0 md:py-5'>
+          <div className='flex w-full md:w-[950px] flex-col md:flex-row justify-center py-8 px-5 md:p-0 md:py-10'>
             <div className='w-full md:w-1/2 '>
               <div className='py-5'>
                 <p className='text-white  text-md'>
@@ -361,7 +360,7 @@ const Home = () => {
                         d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
                     </svg>
 
-                    <p className='px-2'>Uyo, Akwa Ibom State Nigeria</p>
+                    <p className='px-2'>Uyo, Nigeria</p>
                   </div>
                 </div>
               </div>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 // import { Link } from 'react-router-dom';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+import Patiencewhite from './../assets/Patiencewhite.png'
 
 const Nav = () => {
   const navigation = [
@@ -23,8 +24,12 @@ const Nav = () => {
 
   return (
     <div className='relative'>
-      <div className={`bg-[#171A2B] text-[#F3F3F4] flex justify-between items-center p-3 shadow-xl fixed z-10 top-0 w-full gap-4`}>
-        {!bar && <h1>patience</h1>}
+      <div className={`bg-[#171A2B] text-[#F3F3F4] flex justify-between items-center  shadow-xl fixed z-10 top-0 w-full gap-x-4`}>
+        {!bar && 
+        <div className='text-xs '>
+        <img src={Patiencewhite} className=' w-28 h-20 flex justify-center items-center' alt='logo'/>
+        </div>
+        }
         <div>
           <div className={`relative top-0 md:hidden py-3 ${bar ? 'translate-x-80' : 'translate-x-[-40px]'}`}>
             {bar ? (
